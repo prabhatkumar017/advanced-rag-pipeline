@@ -1,0 +1,16 @@
+langchain
+langchain-community
+openai
+faiss-cpu
+sentence-transformers
+rank-bm25
+pydantic
+fastapi
+uvicorn
+streamlit
+ragas
+datasets
+numpy
+scikit-learn
+python-dotenv
+langchain-text-splitters
