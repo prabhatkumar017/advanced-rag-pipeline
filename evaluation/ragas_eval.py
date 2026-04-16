@@ -9,9 +9,14 @@ Measures:
 """
 
 from ragas import evaluate
+from ragas.metrics import faithfulness, answer_relevancy, context_precision
+
 
 def evaluate_rag(dataset):
 
-    results = evaluate(dataset)
+    results = evaluate(
+        dataset,
+        metrics=[faithfulness, answer_relevancy, context_precision]
+    )
 
     return results

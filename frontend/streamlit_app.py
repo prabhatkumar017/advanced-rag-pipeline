@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-st.title("Research Paper RAG Assistant")
+st.title("CNN/DailyMail News RAG Assistant")
 
 question = st.text_input("Ask question")
 

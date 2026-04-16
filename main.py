@@ -14,6 +14,7 @@ from retrieval.hybrid_search import hybrid_retrieval
 from retrieval.reranker import rerank
 
 from generation.answer_generator import generate_answer
+from feedback.interaction_logger import log_interaction
 
 
 print("Loading documents")
@@ -55,6 +56,8 @@ def ask(question):
     context = "\n".join(reranked)
 
     answer = generate_answer(context, question)
+
+    log_interaction(question, answer, context)
 
     return answer
 
